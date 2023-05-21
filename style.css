@@ -1,15 +1,21 @@
 nav{
     background-color: #004e71;
-    
 }
 .botao{
-  font-weight: bold;
+    font-weight: 500;
     color: #004e71;
-    font-size: 12px;
+    font-size: 16px;
     border: 1px solid #b3c9d3;
     background-color: aliceblue;
-    padding: 7px;
-    width: 200px;
+    padding: 20px 5px 40px;
+    margin: 0px;
+    width: 250px;
+    height: 36px;
+}
+.botao:hover{
+  color:#0d6efd;
+  transition: 0.5s;
+  
 }
 .divisoria{
     padding: 20px ;
@@ -23,9 +29,9 @@ nav{
 .textoG{
     color: #004e71;
 }
-
 .titulo{
-    padding: 30px 5px;
+    padding-top: 40px;
+    font-weight: bold;
     color:#004e71;
     font-size: 20px;
 }
@@ -37,25 +43,23 @@ nav{
 .hero{
     padding-bottom: 0rem !important;
 }
-
-.grid-container {
-    margin-left: 21rem;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 5px;
-    /* margin: 0rem 25rem; */
-    
-    padding: 10px 30px;
-    width: 10rem;
+.container1{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  color: #7aa0b3;
+  padding: 20px 20%;
+  gap: 7px;
   }
-  
-  .quadro{
-    align-items: center;
-    
+  .container1> div {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    height: 70px;
+    width: 160px;
+    padding: 20px;
+    border: 1px solid #7aa0b3;
   }
-
-  
-  
   .botao-nav{
     font-size: 15px;
     height: 50px;
@@ -63,13 +67,12 @@ nav{
     background-color: #e87c25;
     border: 1px solid white;
   }
-
   .botao-nav:hover{
-    border-color: black;
-    color: black;
+    border-color: #004e71;
+    color: #004e71;
+    transition: 0.3s;
   }
-
-  .grid-container > div {
+  .grid > div {
     color: #7aa0b3;
     align-items: center;
     height: 60px;
@@ -81,39 +84,55 @@ nav{
     font-size: 10px;
   }
   #quadrado{
-    font-size: 8px  ;
+    font-size: 11px  ;
   }
-
   .butao{
-    
+    position: relative;
+    top: 10px;
+    right: 9px;
+    left: 9px;
+    margin-right: auto;
     color: #7aa0b3;
-    font-size: 10px;
+    font-size: 13px;
     border: 1px solid #b3c9d3;
     background-color: aliceblue;
     height: 40px;
-    width: 210px;
-    padding: 10px 10px 10px;
+    width: 300px;
   }
- .teladiv{
-    justify-content: space-between;
-    display: inline-flex;
- }
-
- 
-  
- 
+  .butao:hover{
+    color:#004e71;
+    border-color: #004e71;
+    transition: 0.3s;
+  }
+  .container2{
+    background-color: white;
+    width: 100%;
+    margin-top:20px;
+    padding: 30px 0px 0px;
+    display: grid;
+    grid-template-areas:
+    'sidebar content content';
+  }
+  .container2 > div{
+    background-color: #0d6efd;
+    margin: 0px;
+    padding: 0px;
+  }
+  .parenteses{
+    padding-top: 5px;
+    font-weight:lighter;
+    font-size: 11px;
+  }
   footer {
     background-color: #004e71;
-    
-    margin-top: 100px;
+    margin-top: 0px;
   }
-  
+
   .img-rodape {
     display: block;
     margin: 0 auto;
-    
   }
-  
+
   .logos {
     color: aliceblue;
     background-color: #004e71;
@@ -124,4 +143,31 @@ nav{
     margin: 5px;
     margin-top: 10px;
     cursor: pointer;
+}
+#sidebar {
+  display: grid;
+  grid-template-rows:auto auto auto auto auto ;
+  justify-content: flex-end;
+  padding: 70px 15px;
+  padding-bottom: 75px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  grid-area: sidebar;
+  height: 50vh;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#content {
+  padding: 50px;
+  font-size: 45px;
+  color:white;
+  border-left: 1px solid white;
+  grid-area: content;
+  height: 50vh;
+}
+span{
+  font-size: 20px;
 }
